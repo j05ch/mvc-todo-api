@@ -4,7 +4,7 @@ const {Task, TaskList} = require("../models");
 
 controller.get('/task-lists/:taskListsId/tasks', async function (req, res) {
     const taskList = await TaskList.findOne({
-        where: {id: req.params.taskListId},
+        where: {id: req.params.taskListsId},
         include: [Task]
     });
     res.json(taskList.tasks);
