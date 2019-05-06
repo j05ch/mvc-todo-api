@@ -45,4 +45,18 @@ controller.patch('/task-lists/:taskListsId/tasks/:taskId', async function (req, 
         res.sendStatus(404);
 });
 
+controller.delete('/task-lists/:taskListsId/tasks/:taskId', async function (req, res) {
+    const task = await Task.findOne({
+        where: {
+            id: req.params.taskId,
+            taskListId: req.params.taskListsId
+        }
+    });
+    if (task) {
+        await task.delete;
+        res.status(200).json(task);
+    } else
+        res.sendStatus(404);
+});
+
 module.exports = controller;
