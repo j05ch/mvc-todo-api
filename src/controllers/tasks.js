@@ -53,7 +53,7 @@ controller.delete('/task-lists/:taskListsId/tasks/:taskId', async function (req,
         }
     });
     if (task) {
-        await task.delete;
+        await task.destroy();
         res.status(200).json(task);
     } else
         res.sendStatus(404);
