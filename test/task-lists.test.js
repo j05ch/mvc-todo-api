@@ -25,14 +25,26 @@ describe('task- lists API', () => {
                 .get('/task-lists')
                 .expect(200)
                 .then(res => {
-                    expect(res.body).toHaveLength
-                    expect(res.body[0]).toHaveProperty('createdAt')
-                    expect(res.body[0]).toHaveProperty('id')
-                    expect(res.body[0]).toHaveProperty('title', 'Titel')
-                    expect(res.body[0]).toHaveProperty('updatedAt')
+                    expect(res.body).toHaveLength(1);
+                    expect(res.body[0]).toHaveProperty('createdAt');
+                    expect(res.body[0]).toHaveProperty('id');
+                    expect(res.body[0]).toHaveProperty('title', 'Titel');
+                    expect(res.body[0]).toHaveProperty('updatedAt');
                 })
         });
-    })
+    });
+
+    describe('DELETE /task-lists/:taskListId', () => {
+        it('should delete creates tasklist and return 200', async () => {
+            const taskList = await TaskList.create({
+                title: "TaskList to delete"
+            });
+            await request(app)
+                .delete(`/task-lists/${taskList.id}`)
+                .expect(200)
+        });
+    });
+
     describe('POST /task-lists)', () => {
         it('should post task', async () => {
             await request(app)
