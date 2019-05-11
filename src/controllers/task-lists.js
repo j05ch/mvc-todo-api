@@ -17,7 +17,7 @@ controller.post('/task-lists', async function(req, res) {
 controller.delete('/task-lists/:taskListsId', async function (req, res) {
     const taskList = await TaskList.findOne({
         where: {
-            id: req.params.taskListId,
+            id: req.params.taskListsId,
         }
     });
     if (taskList) {
