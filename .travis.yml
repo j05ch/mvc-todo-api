@@ -1,5 +1,9 @@
 language: node_js
 node_js:
-  - "10.15.3"
+- 10.15.3
 script:
-  - yarn test
+- yarn test
+deploy:
+  provider: heroku
+  api_key:
+    secure: LT9v2HAeiNUnGbu44Z+EOcZoreWEJkdmvP1DzXMPmZVUCBjiTUKX9Fvj6wO6RSaENEAFTg9TufeEDaOMq1gAwX3UKk5gsm1pC2DZg84jl6HSnflumjU91E9QmQGnpdH8d4K0PPMEKhRiqTGNOcK5md61iVlAwsCp/mEnd9UxYXgwxFGkHFaW1CbpMhG3HvE8GtkUvJuV63hSbAwmmdVvqf7LQFMbvdj+JM7sav4J1UutrCpCvP7v2akHUI6SSqnsUEvvBiL0DK/1mFP8tfjsqLBqdOXn7zr5MhPEKbTiT3mpc5t5ET+/hO93AfXdI6DLb8SCWm1aXtZXfln9VI+yigJN7ys1ucIv6xFwKLRbFyowvdn8R04+9GfJCckPtcAzbWAgIh6h60Ujr+PnNGwkp2vGmLcdnp0YPwvADkJO/NI1ADoqA43c5UIwf9Ap9eCq1JaESKAwguOLwCtmS4JU8+W6hjEDeW6jNsUR3PNklh9LkMArcidVCkqz7ORAFJ1M3uotXQs3gDarSpMv/bTQgstBBCXHrTo2YyDWN148n5cIEeEQhc7M6Na+bISQhCGpMQXohktxHMQY+zgtkrYn8Xsh82RkuGFtgEe4CJtnmF0t+Rhs75mxv3xFyYt0/0IN4Oz+QRp+O2DmEd6epkI6JzyJ0kRiMDAQABYQPHIm02A=
