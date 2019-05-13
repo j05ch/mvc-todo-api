@@ -238,7 +238,7 @@
       <workItem from="1555338391331" duration="2899000" />
       <workItem from="1556920781655" duration="12540000" />
       <workItem from="1557583382632" duration="3456000" />
-      <workItem from="1557665233691" duration="4142000" />
+      <workItem from="1557665233691" duration="4688000" />
     </task>
     <task id="LOCAL-00001" summary="fix get tasks">
       <created>1554901744095</created>
@@ -331,7 +331,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557668502014</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update">
+      <created>1557752054123</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1557752054124</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update token">
+      <created>1557753658620</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1557753658620</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -367,7 +381,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73107000" />
+    <option name="totallyTimeSpent" value="73653000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,7 +488,9 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="update travis" />
     <MESSAGE value="update travis with heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="update travis with heroku" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update token" />
+    <option name="LAST_COMMIT_MESSAGE" value="update token" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controllers/home.js" />
