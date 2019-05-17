@@ -7,7 +7,7 @@
     "pg": "^7.11.0",
     "require-dir-all": "^0.4.15",
     "sequelize": ">=5.3.0",
-    "sqlite3": "^4.0.6"
+    "sqlite3": "^4.0.8"
   },
   "devDependencies": {
     "jest": "^24.0.0",
