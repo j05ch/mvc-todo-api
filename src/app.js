@@ -24,5 +24,3 @@ module.exports = ({dbUrl, storage = "database.sqlite"} = {}) => {
 
     return app;
 };
-
-// wenn node env = test ':memory:'
