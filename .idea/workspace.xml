@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82990706-630f-43a0-88f7-be599d29d26a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +253,7 @@
       <workItem from="1556920781655" duration="12540000" />
       <workItem from="1557583382632" duration="3456000" />
       <workItem from="1557665233691" duration="12561000" />
-      <workItem from="1558083324694" duration="2172000" />
+      <workItem from="1558083324694" duration="2946000" />
     </task>
     <task id="LOCAL-00001" summary="fix get tasks">
       <created>1554901744095</created>
@@ -410,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558077472380</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactor">
+      <created>1558132492204</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1558132492204</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -446,7 +452,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83698000" />
+    <option name="totallyTimeSpent" value="84472000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,10 +561,10 @@
     <MESSAGE value="update" />
     <MESSAGE value="add Postgres" />
     <MESSAGE value="update token" />
-    <MESSAGE value="refactor" />
     <MESSAGE value="upgrade Sequelize" />
     <MESSAGE value="fix dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix dependencies" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controllers/home.js" />
