@@ -1,5 +1,5 @@
 # MVC-Todo
-Todo list backend in Node.js. Works together with MVC-Todo frontend.
+Todo list backend in Node.js. Works together with my MVC-Todo frontend.
 
 Install with _yarn install_.
 
