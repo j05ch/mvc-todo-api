@@ -1,6 +1,12 @@
 # MVC-Todo-Api
 Todo list backend in Node.js. Works together with my MVC-Todo frontend.
 
-Install with _yarn install_.
+Install with
+```sh
+yarn install
+```
 
-Start with _yarn start_.
+Start server with
+```sh
+yarn start
+```
