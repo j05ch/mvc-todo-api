@@ -2,17 +2,17 @@ const {Router} = require("express");
 const controller = Router();
 const {Task, TaskList} = require("../models");
 
-controller.get('/task-lists/:taskListsId/tasks', async function (req, res) {
+controller.get('/task-lists/:taskListId/tasks', async function (req, res) {
     const taskList = await TaskList.findOne({
-        where: {id: req.params.taskListsId},
+        where: {id: req.params.taskListId},
         include: [Task]
     });
     res.json(taskList.tasks);
 });
 
-controller.post('/task-lists/:taskListsId/tasks', async function (req, res) {
+controller.post('/task-lists/:taskListId/tasks', async function (req, res) {
     const taskList = await TaskList.findOne({
-        where: {id: req.params.taskListsId}
+        where: {id: req.params.taskListId}
     });
     const task = await taskList.createTask(req.body, {fields: ['title', 'description', 'status']});
     res.status(201).json(task);
@@ -31,11 +31,11 @@ controller.get("/task-lists/:taskListId/tasks/:taskId", async (req, res) => {
         res.sendStatus(404);
 });
 
-controller.patch('/task-lists/:taskListsId/tasks/:taskId', async function (req, res) {
+controller.patch('/task-lists/:taskListId/tasks/:taskId', async function (req, res) {
     const task = await Task.findOne({
         where: {
             id: req.params.taskId,
-            taskListId: req.params.taskListsId
+            taskListId: req.params.taskListId
         }
     });
     if (task) {
@@ -45,11 +45,11 @@ controller.patch('/task-lists/:taskListsId/tasks/:taskId', async function (req, 
         res.sendStatus(404);
 });
 
-controller.delete('/task-lists/:taskListsId/tasks/:taskId', async function (req, res) {
+controller.delete('/task-lists/:taskListId/tasks/:taskId', async function (req, res) {
     const task = await Task.findOne({
         where: {
             id: req.params.taskId,
-            taskListId: req.params.taskListsId
+            taskListId: req.params.taskListId
         }
     });
     if (task) {

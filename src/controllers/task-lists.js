@@ -12,10 +12,10 @@ controller.post('/task-lists', async function (req, res) {
     res.status(201).json(taskList);
 });
 
-controller.delete('/task-lists/:taskListsId', async function (req, res) {
+controller.delete('/task-lists/:taskListId', async function (req, res) {
     const taskList = await TaskList.findOne({
         where: {
-            id: req.params.taskListsId,
+            id: req.params.taskListId,
         }
     });
     if (taskList) {
