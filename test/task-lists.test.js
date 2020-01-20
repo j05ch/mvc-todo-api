@@ -16,8 +16,7 @@ describe('task- lists API', () => {
                 .then(res => {
                     expect(res.body).toEqual([])
                 })
-        )
-        ;
+        );
 
         it('should return task-list', async () => {
             await TaskList.create({title: 'Titel'});
